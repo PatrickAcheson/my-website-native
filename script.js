@@ -13,7 +13,7 @@ document.querySelector('.hamburger').addEventListener('click', function () {
 document.querySelector('nav').classList.toggle('nav-open');
 });
 
-ScrollReveal().reveal('.scroll-reveal', { delay: 200 });
+ScrollReveal().reveal('.scroll-reveal', { delay: 300 });
 
 const container = document.querySelector('.container');
 let lastScrollPosition = window.pageYOffset;
@@ -30,6 +30,10 @@ window.addEventListener('scroll', () => {
   }
   
   lastScrollPosition = currentScrollPosition;
+
+  //const icon = document.querySelector('.icon-scroll');
+    //icon.style.display = 'none';
+
 });
 
 const colors = ["#3CC157", "#2AA7FF", "#1B1B1B", "#FCBC0F", "#F85F36"];
@@ -64,11 +68,11 @@ balls.forEach((el, i, ra) => {
         { transform: `translate(${to.x}rem, ${to.y}rem)` }
       ],
       {
-        duration: (Math.random() + 1) * 2000, // random duration
+        duration: (Math.random() + 1) * 2000,
         direction: "alternate",
         fill: "both",
         iterations: Infinity,
-        easing: "ease-out" // changed from "ease-in-out"
+        easing: "ease-out"
       }
     );
   });

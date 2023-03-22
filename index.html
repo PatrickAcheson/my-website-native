@@ -7,6 +7,8 @@
     <script src="https://unpkg.com/scrollreveal"></script>
     <link rel="stylesheet" href="https://unpkg.com/scrollreveal/dist/scrollreveal.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
 </head>
 
 <body>
@@ -33,30 +35,38 @@
                 The Flag (CTF) challenges, enhancing my skills in
                 security, networking, and cryptography to outsmart <span style="color: #EC3A3A;">adversaries</span>.</p>
         </div>
-        <section class="scroll-reveal" id="about">
-            <div class="about-container">
-                <h2>About Me</h2>
-                <p>As an undergraduate Cyber Security student at
-                    Edinburgh Napier University, I am dedicated to learning
-                    and growing in this field. In my spare time, I enjoy
-                    diving into side projects in web development and
-                    participating in capture the flag competitions on
-                    platforms such as HackTheBox and TryHackMe.
-                    I am excited to explore opportunities in cyber
-                    security internships and entry-level positions,
-                    and to contribute my skills and passion to a
-                    team of professionals.</p>
-                <ul>
-                    <li>Passionate about cyber security</li>
-                    <li>Skilled in Python, JavaScript, and more</li>
-                    <li>Experienced in computer networks and web exploitation</li>
-                </ul>
+        <section class="about-section scroll-reveal" id="about">
+            <div class="container-centered">
+              <div class="about-container">
+                <p class="section-sub-text">INTRODUCTION</p>
+                    <h2 class="section-head-text">Overview.</h2>
+                    <p class="about-text">
+                        As a dedicated Cyber Security student at Edinburgh Napier University,
+                        I am on track for a first-class honours degree. In my free time, I
+                        engage in web development projects and compete in CTF events. Eager
+                        to learn and grow in the industry, I seek internships and entry-level
+                        positions.
+                        With proficiency in Python, JavaScript, and familiarity
+                        with Linux/Windows OS, computer networks, and exploitation/escalation
+                        techniques, I am ready to contribute my skills and passion to a professional team,
+                        addressing real-world cyber security challenges.
+                    </p>
+                    <div class="service-cards" id="services-container">
+                        <!-- Add your service cards here -->
+                    </div>
+                </div>
             </div>
         </section>
 
-        <section class="scroll-reveal" id="experience">
-            <h2>Experience</h2>
-            <p>Some content here...</p>
+        <section class="experience-section scroll-reveal">
+            <div class="container-centered">
+                <div class="experience-container">
+                    <h2 class="section-timeline-head-text">Work Experience</h2>
+                    <div class="timeline" id="experience-timeline">
+                        <!-- Experience timeline elements will be inserted here -->
+                    </div>
+                </div>
+            </div>
         </section>
         <section class="scroll-reveal" id="work">
             <h2>Work</h2>
@@ -85,6 +95,10 @@
     </main>
     <div class="background-balls"></div>
     <script src="./script.js"></script>
+    <script src="./services.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
