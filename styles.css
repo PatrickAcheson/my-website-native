@@ -223,7 +223,7 @@ nav p {
     width: 40px;
     height: 70px;
     margin-left: -20px;
-    top: 22%;
+    top: 25%;
     box-shadow: inset 0 0 0 1px #fff;
     border-radius: 25px;
 }
@@ -588,6 +588,9 @@ nav p {
 .card__title {
     font-size: calc(var(--size) * 0.06);
     margin-bottom: 0.5rem;
+    color: #1c2331;
+    font-weight: 800;
+    text-decoration: none;
 }
 
 .card__description {
