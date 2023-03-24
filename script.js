@@ -147,3 +147,24 @@ const services = [
   }
   
   addServiceCards();
+
+
+  // emails
+
+  const contactForm = document.getElementById('contact-form');
+
+  contactForm.addEventListener('submit', (event) => {
+    event.preventDefault();
+
+    // Use the email template ID from EmailJS
+    const templateId = 'YOUR_TEMPLATE_ID';
+
+    // Send the email using the form data
+    emailjs.sendForm('YOUR_SERVICE_ID', templateId, contactForm)
+      .then(() => {
+        alert('Email sent successfully!');
+        contactForm.reset();
+      }, (error) => {
+        alert('Error sending email:', error);
+      });
+  });
