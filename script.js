@@ -91,13 +91,10 @@ balls.forEach((el, i, ra) => {
   const resumeButton = document.getElementById('resume-button');
   const modalContainer = document.getElementById('modal-container');
   
-  // Add event listener to resume button
   resumeButton.addEventListener('click', () => {
-    // Show modal
     modalContainer.style.display = 'block';
   });
   
-  // Add event listener to close modal when clicked outside modal content
   modalContainer.addEventListener('click', (event) => {
     if (event.target === modalContainer) {
       modalContainer.style.display = 'none';
@@ -156,10 +153,8 @@ const services = [
   contactForm.addEventListener('submit', (event) => {
     event.preventDefault();
 
-    // Use the email template ID from EmailJS
     const templateId = 'YOUR_TEMPLATE_ID';
 
-    // Send the email using the form data
     emailjs.sendForm('YOUR_SERVICE_ID', templateId, contactForm)
       .then(() => {
         alert('Email sent successfully!');
