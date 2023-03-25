@@ -274,6 +274,7 @@ nav p {
 .section-head-text {
     font-size: 42px;
     font-weight: bold;
+    margin-bottom: 40px;
 }
 
 .about-text {
@@ -467,6 +468,7 @@ nav p {
 }
 
 /* download cv */
+
 
 #modal-container {
     display: none;
