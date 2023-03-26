@@ -66,13 +66,15 @@ nav {
 }
 
 .nav-links li a.resume {
-    background-color: #fff;
-    color: #1c2331;
+    background-color: #EC3A3A;
+    color: #ffffff;;
 }
 
 .nav-links li a.resume:hover {
     transition: 0.3s ease-in-out;
     background: #d4d4d4;
+    color: #111825;
+    font-weight: 800;
 }
 
 nav p {
@@ -152,12 +154,7 @@ nav p {
 
 .nav-links li a:hover {
     background-color: rgba(255, 255, 255, 0.1);
-}
-
-/* Style the "Resume" link differently */
-.nav-links li a.resume {
-    background-color: #fff;
-    color: #1c2331;
+    
 }
 
 .hamburger {
@@ -252,7 +249,29 @@ nav p {
     }
 }
 
-
+.icon-container {
+    display: flex;
+    justify-content: left;
+    gap: 1rem;
+    margin-top: 25px;
+    margin-left: 5px;
+  }
+  
+  .icon-link {
+    text-decoration: none;
+    position: relative;
+    margin-right: 20px;
+  }
+  
+  .icon-link:hover {
+    opacity: 0.8;
+  }
+  
+  .icon-img {
+    width: 48px;
+    height: 48px;
+  }
+  
 /*section one */
 
 .experience-section {
