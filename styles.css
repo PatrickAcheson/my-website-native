@@ -67,6 +67,7 @@ nav {
 
 .nav-links li a.resume {
     background-color: #EC3A3A;
+    opacity: 90%;
     color: #ffffff;;
 }
 
@@ -119,6 +120,7 @@ nav p {
     font-size: 60px;
     padding: 5px;
     font-weight: 800;
+    margin-bottom: -10px;
 }
 
 .container h2:nth-of-type(2) {
@@ -254,7 +256,7 @@ nav p {
     justify-content: left;
     gap: 1rem;
     margin-top: 25px;
-    margin-left: 5px;
+    padding: 5px;
   }
   
   .icon-link {
@@ -337,7 +339,7 @@ nav p {
     width: 250px;
     min-height: 280px;
     background: linear-gradient(135deg, #2b0a79, #0d2544);
-    border-radius: 12px;
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -378,7 +380,7 @@ nav p {
     height: 70px;
     object-fit: contain;
     margin-bottom: 20px;
-    margin-left: 15px;
+    margin-left: 20px;
 }
 
 .service-card h3 {
@@ -395,6 +397,7 @@ nav p {
     text-align: center;
     margin-top: 10px;
 }
+
 
 /* jobs */
 
@@ -461,8 +464,8 @@ nav p {
 }
 
 .timeline ul li:hover:before {
-    background-color: rgb(164, 53, 192);
-    box-shadow: 0px 0px 10px 2px rgb(37, 53, 190);
+    background-color: #D92B2B;
+    box-shadow: 0px 0px 10px 2px #F88C8C;
 }
 
 @media (max-width: 767px) {

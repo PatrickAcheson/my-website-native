@@ -46,7 +46,20 @@ function hideElementForFiveSeconds(element) {
   }
 
 
-const colors = ["#3CC157", "#2AA7FF", "#1B1B1B", "#FCBC0F", "#F85F36"];
+  const colors = [
+    "#EC3A3A",
+    "#E32F2F",
+    "#F24444",
+    "#D92B2B",
+    "#F04E4E",
+    "#C92727",
+    "#F56B6B", // Lighter shade of #EC3A3A
+    "#F88C8C", // Even lighter shade of #EC3A3A
+    "#F9A9A9", // Tint of #EC3A3A
+    "#FBC6C6", // Lighter tint of #EC3A3A
+    "#FDE2E2"  // Lightest tint of #EC3A3A
+  ];
+  
 
 const numBalls = 50;
 const balls = [];
@@ -106,7 +119,7 @@ balls.forEach((el, i, ra) => {
 
 const services = [
     {
-      title: "Scripting",
+      title: "Programming",
       icon: "./icons/backend.png"
     },
     {
