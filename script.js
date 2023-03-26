@@ -42,7 +42,7 @@ function hideElementForFiveSeconds(element) {
 
     setTimeout(() => {
       element.style.display = 'block';
-    }, 3000);
+    }, 2500);
   }
 
 
