@@ -173,7 +173,6 @@ nav p {
 /* Responsive styles for smaller screens */
 @media (max-width: 620px) {
 
-    /* Hide the navigation links and display the hamburger menu */
     .nav-links {
         display: none;
     }
@@ -184,7 +183,6 @@ nav p {
         margin: 0;
     }
 
-    /* Show the navigation links when the menu is open */
     .nav-open .nav-links {
         display: flex;
         flex-direction: column;
@@ -197,7 +195,6 @@ nav p {
         opacity: 90%;
     }
 
-    /* Adjust the link styles for smaller screens */
     .nav-links li {
         margin: 0;
         text-align: center;
@@ -208,12 +205,42 @@ nav p {
         padding: 7px 20px;
     }
 
-    /* Push the content down when the menu is open */
     .nav-open~.container,
     .nav-open~section.scroll-reveal {
         margin-top: 220px;
     }
 }
+
+
+@media (max-width: 768px) {
+    .name {
+      font-size: 2em;
+    }
+    .main-title {
+      font-size: 3em;
+    }
+    .sub-title {
+      font-size: 1.5em;
+    }
+    .description {
+      font-size: 1em;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .name {
+      font-size: 1.5em;
+    }
+    .main-title {
+      font-size: 2em;
+    }
+    .sub-title {
+      font-size: 1em;
+    }
+    .description {
+      font-size: 0.8em;
+    }
+  }
 
 .icon-scroll,
 .icon-scroll:before {
@@ -472,7 +499,12 @@ nav p {
 }
 
 @media (max-width: 767px) {
-    .section-experience-text {
+    .section-experience-text .section-projects-text {
+        font-size: 36px;
+        margin-top: 50px;
+    }
+
+    .section-projects-text {
         font-size: 36px;
         margin-top: 50px;
     }
@@ -655,14 +687,12 @@ nav p {
 
     .service-card {
         width: 80%;
-        /* Adjust this value as needed */
         margin: 10px auto;
     }
 }
 
 /* contact section */
 
-/* Contact Me section */
 .contact-section {
     display: flex;
     flex-direction: column;
