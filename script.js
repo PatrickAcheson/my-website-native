@@ -1,3 +1,8 @@
+//Copyright (c) 2023 Patrick Acheson
+//Permission granted to use, copy, modify, and/or distribute this software
+//for any purpose with or without fee, provided the above copyright notice
+//and this permission notice appear in all copies.
+
 document.addEventListener('DOMContentLoaded', function () {
     ScrollReveal().reveal('.sr', { 
       distance: '30px',
