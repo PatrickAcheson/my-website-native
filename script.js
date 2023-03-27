@@ -159,20 +159,20 @@ const services = [
   addServiceCards();
 
 
-  // emails
+const form = document.querySelector('#contact-form');
 
-  const contactForm = document.getElementById('contact-form');
+form.addEventListener('submit', async (event) => {
+  event.preventDefault();
+  const email = form.elements.email.value;
+  if (!isValidEmail(email)) {
+    alert('Please enter a valid email address');
+    return;
+  }
+  form.submit();
+});
 
-  contactForm.addEventListener('submit', (event) => {
-    event.preventDefault();
-
-    const templateId = 'YOUR_TEMPLATE_ID';
-
-    emailjs.sendForm('YOUR_SERVICE_ID', templateId, contactForm)
-      .then(() => {
-        alert('Email sent successfully!');
-        contactForm.reset();
-      }, (error) => {
-        alert('Error sending email:', error);
-      });
-  });
+function isValidEmail(email) {
+  // validate the email using a regular expression
+  const regex = /^\S+@\S+\.\S+$/;
+  return regex.test(email);
+}
