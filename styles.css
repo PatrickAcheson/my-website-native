@@ -640,7 +640,6 @@ nav p {
     width: 100%;
     background: #fff;
     display: grid;
-    grid-template-row: auto auto;
     gap: 0.5ch;
     background: hsl(0 0% 100% / 0.5);
     backdrop-filter: blur(var(--blur));
@@ -649,15 +648,14 @@ nav p {
 }
 
 .card__title {
-    font-size: calc(var(--size) * 0.06);
-    margin-bottom: 0.5rem;
+    font-size: calc(min(max(var(--size) * 0.06, 15px), 22px));
     color: #1c2331;
     font-weight: 800;
     text-decoration: none;
 }
 
 .card__description {
-    font-size: calc(var(--size) * 0.035);
+    font-size: calc(min(max(var(--size) * 0.035, 11px), 15px));
     color: #555;
 }
 
