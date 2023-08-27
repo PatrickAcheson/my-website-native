@@ -128,7 +128,7 @@ const services = [
       icon: "./icons/backend.png"
     },
     {
-      title: "Pentesting",
+      title: "DevSecOps",
       icon: "./icons/creator.png"
     },
     {
